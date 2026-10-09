@@ -4,7 +4,7 @@
     "text": "UK GDP, 1955\u20132026",
     "subtitle": "Chained volume measures, seasonally adjusted, \u00a3 million (quarterly). Source: ONS"
   },
-  "width": "container",
+  "width": "400",
   "height": 700,
   "data": {
     "url": "gdp_quarterly.csv"
