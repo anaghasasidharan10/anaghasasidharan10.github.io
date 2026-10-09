@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK GDP, 1955\u20132026",
+    "subtitle": "Chained volume measures, seasonally adjusted, \u00a3 million (quarterly). Source: ONS"
+  },
+  "width": "container",
+  "height": 400,
+  "data": {
+    "url": "gdp_quarterly.csv"
+  },
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "gdp_m",
+      "type": "quantitative",
+      "title": "GDP (\u00a3 million, chained volume)",
+      "axis": {
+        "format": ","
+      }
+    },
+    "tooltip": [
+      {
+        "field": "quarter",
+        "type": "nominal",
+        "title": "Quarter"
+      },
+      {
+        "field": "gdp_m",
+        "type": "quantitative",
+        "title": "GDP (\u00a3m)",
+        "format": ","
+      }
+    ]
+  }
+}
